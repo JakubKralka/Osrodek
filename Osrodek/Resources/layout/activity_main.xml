@@ -1,0 +1,121 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:minHeight="?attr/actionBarSize"
+      android:background="?attr/colorPrimary"
+      android:elevation="4dp"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+           android:padding="10dp">
+
+           <Button 
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+                android:id="@+id/image1"
+                android:text="PROFIL"
+                android:layout_weight="10"
+            android:textSize="20dp"
+            android:background="#1000ff"
+            android:textColor="#ffffff"
+            android:elevation="30dp"
+                 />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+                android:id="@+id/image2"
+                android:text="INFORMACJE"
+                android:layout_weight="10"
+            android:textSize="20dp"
+            android:background="#00ffff"
+            android:elevation="30dp"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+           android:padding="10dp">
+           <Button
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+                android:id="@+id/image3"
+                android:text="KONTAKT"
+                android:layout_weight="10"
+            android:textSize="20dp"
+            android:background="#ff0020"
+            android:elevation="30dp"
+                 />
+            <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <Button
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+                android:id="@+id/image4"
+                android:text="USLUGI"
+                android:layout_weight="10"
+            android:textSize="20dp"
+            android:elevation="30dp"
+            android:background="#ffff00"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+           android:padding="10dp">
+           <Button
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+                android:id="@+id/image5"
+            android:elevation="30dp"
+                android:text="PROMOCJE"
+                android:layout_weight="10"
+            android:textSize="20dp"
+            android:background="#ff0099"
+                 />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+                android:id="@+id/image6"
+                android:text="KALENDARZ"
+                android:layout_weight="10"
+            android:elevation="30dp"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:background="#009900"
+                />
+    </LinearLayout>
+    
+</LinearLayout>

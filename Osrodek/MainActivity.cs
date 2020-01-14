@@ -27,6 +27,15 @@ namespace Osrodek
 
             AppCompatButton image2 = FindViewById<AppCompatButton>(Resource.Id.image2);
             image2.Click += image2Click;
+            
+            AppCompatButton image3 = FindViewById<AppCompatButton>(Resource.Id.image3);
+            image3.Click += image3Click;
+            
+            AppCompatButton image4 = FindViewById<AppCompatButton>(Resource.Id.image4);
+            image4.Click += image4Click;
+            
+            AppCompatButton image5 = FindViewById<AppCompatButton>(Resource.Id.image5);
+            image5.Click += image5Click;
 
         }
 
@@ -38,9 +47,28 @@ namespace Osrodek
 
         private void image2Click(object sender, EventArgs e)
         {
+            Intent intent = new Intent(this, typeof(Activity3));
+            StartActivity(intent);
+        }
+
+        private void image3Click(object sender, EventArgs e)
+        {
             Intent intent = new Intent(this, typeof(Activity2));
             StartActivity(intent);
         }
+
+        private void image4Click(object sender, EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(Activity4));
+            StartActivity(intent);
+        }
+
+        private void image5Click(object sender, EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(Activity5));
+            StartActivity(intent);
+        }
+
 
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
